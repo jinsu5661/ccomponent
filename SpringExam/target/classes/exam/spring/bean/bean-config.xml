@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans.xsd
+	 http://www.springframework.org/schema/context
+	 http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="exam.spring.bean" />
+    
+    <bean id="androidPhone2" class="java.lang.String ">
+		<constructor-arg value="123">
+		    
+		</constructor-arg>
+		
+	</bean>
+	
+    <!-- 
+   	KakaoTalk Bean 선언
+	<bean id="kakaoTalk" class="exam.spring.bean.KakaoTalk"/>
+	Instagram Bean 선언
+	<bean id="instagram" class="exam.spring.bean.Instagram"/>
+	
+	<bean id="androidPhone1" class="exam.spring.bean.AndroidPhone">
+		<constructor-arg>
+			<value>Phone1</value>
+		</constructor-arg>
+		KakaoTalk 생성자 DI 코드 작성
+		<constructor-arg>
+		    <ref bean="kakaoTalk" />
+		</constructor-arg>
+	</bean>
+	
+	<bean id="androidPhone2" class="exam.spring.bean.AndroidPhone">
+		<property name="name">
+			<value>Phone2</value>
+		</property>
+		Instagram setter 메소드 DI 코드 작성
+		<property name="app">
+		    <ref bean="instagram" />
+		</property>
+	</bean>
+ -->
+ </beans>
+
+
+
+
